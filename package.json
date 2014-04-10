@@ -1,0 +1,26 @@
+{
+  "name": "appdirs",
+  "version": "0.0.2",
+  "description": "Suggest paths for where to save what, trying to follow OS-specific conventions.",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodejs test/test-all.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@mk-pmb.ssh.github.com:mk-pmb/node-appdirs.git"
+  },
+  "keywords": [
+    "findbin",
+    "bindir",
+    "appdir",
+    "appdirs",
+    "configdir",
+    "cfgdir",
+    "xdg",
+    "cachedir",
+    "__dirname"
+  ],
+  "author": "M.K.",
+  "license": "MIT"
+}
