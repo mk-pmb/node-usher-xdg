@@ -1,15 +1,6 @@
-{
-  "name": "appdirs",
-  "version": "0.0.2",
+{ "name": "usher-xdg",
+  "version": "0.0.3",
   "description": "Suggest paths for where to save what, trying to follow OS-specific conventions.",
-  "main": "index.js",
-  "scripts": {
-    "test": "nodejs test/test-all.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@mk-pmb.ssh.github.com:mk-pmb/node-appdirs.git"
-  },
   "keywords": [
     "findbin",
     "bindir",
@@ -21,6 +12,29 @@
     "cachedir",
     "__dirname"
   ],
-  "author": "M.K.",
-  "license": "MIT"
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/usher-xdg-node#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/usher-xdg-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/usher-xdg-node/issues"
+  },
+
+  "private": false, "license": "ISC",
+
+  "main": "usher-xdg.js",
+  "scripts": {
+    "test": "demo-util-160404-test-demos"
+  },
+  "directories": { "doc": "doc" },
+
+  "devDependencies": {
+    "lib-demo-util-160404": "^0.1.0"
+  },
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
 }
