@@ -1,7 +1,14 @@
--*- coding: utf-8, tab-width: 2 -*-
+﻿
+<!--#echo json="package.json" key="name" underline="=" -->
+usher-xdg
+=========
+<!--/#echo -->
 
-Usher
-=====
+<!--#echo json="package.json" key="description" -->
+Suggest paths for where to save what, trying to follow OS-specific
+conventions.
+<!--/#echo -->
+
 
 Usher suggests directories where to put stuff,
 to help you house-train your programs.
@@ -13,6 +20,7 @@ but none supported all the directory roles that I'd want to use.
 
 Features
 --------
+
 Basic self-awareness:
 * ![☑][ck-hz] Expose `appMainFile`
 * ![☑][ck-hz] Expose `binDir`
@@ -32,7 +40,7 @@ The usual suspects:
 | …LogsDir    | ![☑][ck-hz] | ![◪][ck-pt] | ![◪][ck-pt] |
 
 Standards awareness:
-* ![☐][ck-no] Loosely support [Windows Roaming][win-roam] support
+* ![☐][ck-no] Loosely support [Windows Roaming][win-roam]
   * ![☐][ck-no] Strictly compliant mode available
 * ![☑][ck-hz] Loosely support [XDG Base Directory Specification][xdg-dirs]
   * ![☐][ck-no] Strictly compliant mode available
@@ -84,11 +92,11 @@ Good to know
 
 
 
-License
--------
+<!--#toc stop="scan" -->
 
-[MIT](LICENSE.MIT.md)
 
+
+&nbsp;
 
   [xdg-dirs]: http://standards.freedesktop.org/basedir-spec/basedir-spec-latest.html
   [win-roam]: http://technet.microsoft.com/en-us/library/cc766489%28WS.10%29.aspx
@@ -104,3 +112,9 @@ License
   [ck-up]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-up.gif# "⟎"
   [ck-pt]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-partial.gif# "◪"
   [ck-no]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-minus.gif# "☐"
+
+License
+-------
+<!--#echo json="package.json" key=".license" -->
+ISC
+<!--/#echo -->
