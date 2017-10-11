@@ -107,7 +107,7 @@ Good to know
   [appdirs-js]: https://github.com/building5/appdirsjs
   [appdirs-py]: https://pypi.python.org/pypi/appdirs
   [nodeapi-dirname]: http://nodejs.org/api/globals.html#globals_dirname
-  [apple-paths-guide]: https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html)
+  [apple-paths-guide]: https://developer.apple.com/library/ios/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html
   [ck-hz]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-has.gif# "☑"
   [ck-up]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-up.gif# "⟎"
   [ck-pt]: https://raw.githubusercontent.com/mk-pmb/misc/master/gfm-util/img/checkmark-partial.gif# "◪"
