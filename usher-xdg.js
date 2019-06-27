@@ -10,6 +10,7 @@ var PT = function UsherXDG() { return PT.init.apply(null, arguments); },
 
 
 function ifFun(x, d) { return ((typeof x) === 'function' ? x : d); }
+function ucFirst(s) { return s.slice(0, 1).toUpperCase() + s.slice(1); }
 
 
 PT.init = function (opts) {
@@ -55,8 +56,7 @@ PT.initGuess = function (slot, opts) {
   if (dir) { return dir; }
   dir = (opts && opts[slot]);
   if (!dir) {
-    dir = PT['guess' + slot.substr(0, 1).toUpperCase() +
-      slot.substr(1, slot.length)];
+    dir = PT['guess' + ucFirst(slot)];
     if ('function' !== typeof dir) {
       throw new Error('cannot guess unsupported slot ' + slot);
     }
