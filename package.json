@@ -1,5 +1,5 @@
 { "name": "usher-xdg",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Suggest paths for where to save what, trying to follow OS-specific conventions.",
   "keywords": [
     "findbin",
