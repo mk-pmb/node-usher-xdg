@@ -9,6 +9,9 @@ var PT = function UsherXDG() { return PT.init.apply(null, arguments); },
   guessFuncRgx = /^guess([A-Z])([a-zA-Z]+)$/;
 
 
+function ifFun(x, d) { return ((typeof x) === 'function' ? x : d); }
+
+
 PT.init = function (opts) {
   var appCtx = Object.create(PT);
   opts = (opts || false);
@@ -21,7 +24,7 @@ PT.init = function (opts) {
   PT.initGuess.order.forEach(function (slot) {
     appCtx.initGuess(slot, opts);
   });
-  if (opts.xdgStrict instanceof Function) {
+  if (ifFun(opts.xdgStrict)) {
     // Start determining the strictness
     setImmediate(opts.xdgStrict.bind(null, appCtx));
   }
@@ -268,7 +271,7 @@ PT.guessSiteConfigDirs = function () {
     return [PT.winPathTODO()];
   case 'xdg':
     dirs = (this.xdgEnv('DATA_DIRS', true) || ['/etc/xdg']);
-    if (!this.xdgStrict()) { dirs[dirs.length] = '/etc'; }
+    if (!this.xdgStrict()) { dirs.push('/etc'); }
     dirs = PT.extendPaths(dirs, sub);
     dirs.toString = PT.colonizePathsArray;
     return dirs;
@@ -307,7 +310,7 @@ PT.guessUserStateDir = function () {
   case 'xdg':
     path = (this.xdgEnv('RUNTIME_DIR', false) ||
       pathLib.join(this.userCacheDir, 'run'));
-    if (this.xdgStrict instanceof Function) {
+    if (!ifFun(this.xdgStrict)) {
       throw new Error('Unable to verify whether XDG_RUNTIME_DIR is ' +
         'fully-featured by the standards of the operating system: ' +
         'Checks not yet implemented');
